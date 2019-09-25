@@ -1,14 +1,14 @@
-package main;
+package UI;
 
 import org.lwjgl.input.Mouse;
 import org.lwjgl.util.vector.Vector2f;
 
-public class Button extends GameEntity{
+public class Button {
 	
 	boolean active;
 
 	public Button(Vector2f pos, Vector2f size) {
-		super(pos, size);
+		
 		// TODO Auto-generated constructor stub
 	}
 	

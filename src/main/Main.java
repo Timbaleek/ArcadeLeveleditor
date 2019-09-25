@@ -5,8 +5,9 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
-import org.lwjgl.util.Color;
 import org.lwjgl.util.vector.Vector2f;
+
+import UI.ScrollUI;
 public class Main {
 
 	final static int screenWidth = 1920;
@@ -14,7 +15,7 @@ public class Main {
 	final static int numOfWorlds = 1;
 	static World[] worlds = new World[numOfWorlds];
 	static int currentWorld = 0;
-	public static GameEntity activeEntity;
+	//public static GameEntity activeEntity;
 	
 	public static void main(String[] args) {
 		try {
@@ -54,7 +55,7 @@ public class Main {
 	public static ScrollUI scrollUI;
 	private static void init() {
 		camera = new Camera(new Vector2f(0,0), 1);
-		scrollUI = new ScrollUI(new Vector2f(0,0), new Vector2f(500,screenHeight), new Vector2f(50,50), new Color(20,20,20));
+		//scrollUI = new ScrollUI(new Vector2f(0,0), new Vector2f(500,screenHeight), new Vector2f(50,50), new Color(20,20,20));
 
 		for(int i = 0; i<numOfWorlds; i++){
 			worlds[i] = new World(i);

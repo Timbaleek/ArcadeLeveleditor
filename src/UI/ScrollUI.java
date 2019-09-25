@@ -1,4 +1,4 @@
-package main;
+package UI;
 
 import org.lwjgl.util.Color;
 import org.lwjgl.util.vector.Vector2f;
